@@ -44,8 +44,9 @@ static void fluid_tilde_free(t_fluid_tilde *x){
 static void fluid_help(void){
     post("\n");
     post("---------------------------------------------------------");
-    post(" - [fluid~] 2.0: A soundfont external for Pure Data");
-    post(" based on fluidsynth (https://www.fluidsynth.org)");
+    post(" - [fluid~] A soundfont external for Pure Data");
+    post(" based on fluidsynth (https://www.fluidsynth.org).");
+    post(" - repository: https://github.com/porres/pd-fluid");
     post(" - fluidsynth version: %s ", FLUIDSYNTH_VERSION);
     post("---------------------------------------------------------");
     post("- Initialization arguments:");
@@ -392,6 +393,8 @@ void fluid_tilde_setup(void){
     // Simulate Flext's help message
     class_addmethod(fluid_tilde_class, (t_method)fluid_help, gensym("help"), 0);
     post("----------------------------------------------------");
-    post("[fluid~] 2.0 for Pd, using fluidsynth version: %s", FLUIDSYNTH_VERSION);
+    post("[fluid~] for Pd, using fluidsynth version: %s", FLUIDSYNTH_VERSION);
+    post(" This is a test version, unreleased");
+    post(" The code's repository is https://github.com/porres/pd-fluid");
     post("----------------------------------------------------");
 }
