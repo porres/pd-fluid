@@ -278,7 +278,6 @@ static void fluid_load(t_fluid_tilde *x, t_symbol *s, int argc, t_atom *argv){
         char realdir[MAXPDSTRING], *realname = NULL;
         int fd;
         if(ext && !strchr(ext, '/')){ // extension already supplied, no default extension
-            post("extension supplied");
             ext = "";
             fd = canvas_open(x->x_canvas, filename, ext, realdir, &realname, MAXPDSTRING, 0);
             if(fd < 0){
