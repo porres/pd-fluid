@@ -173,10 +173,9 @@ to lowercase), f 25;
 #X obj 70 63 openpanel;
 #X obj 70 33 bng 18 250 50 0 empty empty empty 17 7 0 10 -228856 -1
 -1;
-#X text 241 108 <= reinitializes objects with new arguments (you can
+#X text 262 108 <= reinitializes objects with new arguments (you can
 also optionaly use the -smmf flag), f 43;
 #X text 206 150 <= print help information;
-#X msg 154 110 init TimGM6mb;
 #X text 267 317 channel \, generator number \, value;
 #X text 195 192 set generators (like: 17 is "pan");
 #X text 96 35 load a different soundfont;
@@ -184,18 +183,19 @@ also optionaly use the -smmf flag), f 43;
 #X obj 159 359 outlet;
 #X text 249 60 If no extension is given \, it searches for both ".sf2"
 and ".sf3" extensions. This is the same for the argument., f 38;
-#X connect 0 0 22 0;
+#X msg 154 110 init sf2/Famicom;
+#X connect 0 0 21 0;
 #X connect 2 0 0 0;
 #X connect 3 0 2 0;
 #X connect 4 0 2 1;
 #X connect 4 0 6 0;
 #X connect 6 0 1 0;
-#X connect 10 0 22 0;
-#X connect 12 0 22 0;
+#X connect 10 0 21 0;
+#X connect 12 0 21 0;
 #X connect 13 0 12 0;
 #X connect 14 0 13 0;
-#X connect 17 0 22 0;
-#X connect 21 0 22 0;
+#X connect 20 0 21 0;
+#X connect 23 0 21 0;
 #X restore 243 103 pd other-messages;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X coords 0 1 100 -1 552 22 1 0 0;
@@ -736,7 +736,7 @@ is 100% backwards compatible to the original object by Frank Barknecht
 #X obj 253 76 hsl 89 20 0 1 0 0 \$0-slider \$0-set-slider volume 17
 9 0 14 -228856 -1 -1 0 1;
 #X obj 277 60 tgl 16 0 \$0-dsp-toggle \$0-dsp-toggle-set empty 19 8
-0 12 -228856 -128992 -262144 0 1;
+0 12 -74965 -212593 -262144 1 1;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 4 1;
@@ -1204,7 +1204,7 @@ is 100% backwards compatible to the original object by Frank Barknecht
 #X obj 253 76 hsl 89 20 0 1 0 0 \$0-slider \$0-set-slider volume 17
 9 0 14 -228856 -1 -1 0 1;
 #X obj 277 60 tgl 16 0 \$0-dsp-toggle \$0-dsp-toggle-set empty 19 8
-0 12 -228856 -128992 -262144 0 1;
+0 12 -74965 -212593 -262144 1 1;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 4 1;
