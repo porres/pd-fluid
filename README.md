@@ -1,10 +1,13 @@
 * * *
 
-**[fluid~] - soundfont player for Pure Data that uses fluidsynth.**
+** STATUS: ABANDONED OVER https://github.com/porres/pd-fluidsynth **
 
 * * *
 
 ### About:
+
+
+**[fluid~] - soundfont player for Pure Data that uses fluidsynth.**
 
 [fluid~] is an external for Pure Data that loads fluidsynth for a fullblown orchestra.
 
